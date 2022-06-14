@@ -1,0 +1,55 @@
+{
+  "name": "unique_api_vue",
+  "license": "MIT",
+  "author": "Unique network dev team",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --force",
+    "build": "tsup"
+  },
+  "tsup": {
+    "entry": [
+      "src/srclib/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true,
+    "sourcemap": true,
+    "clean": true
+  },
+  "description": "Vue tools for @unique-nft/api",
+  "keywords": [
+    "@unique-nft/api",
+    "nft",
+    "vue",
+    "Unique Network"
+  ],
+  "files": [
+    "dist",
+    "src/srclib"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@unique-nft/api": "0.0.7",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "sass": "^1.52.3",
+    "tsup": "^6.1.0",
+    "typescript": "^4.7.3",
+    "vite": "^2.9.10",
+    "vue-router": "^4.0.16",
+    "vue-tsc": "^0.35.2"
+  }
+}
