@@ -2,7 +2,7 @@
   "name": "unique_api_vue",
   "license": "MIT",
   "author": "Unique network dev team",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite --force",
     "build": "tsup",
@@ -42,7 +42,7 @@
     }
   },
   "dependencies": {
-    "@unique-nft/api": "0.0.7",
+    "@unique-nft/api": "0.0.8",
     "vue": "^3.2.37"
   },
   "devDependencies": {

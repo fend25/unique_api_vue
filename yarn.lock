@@ -988,10 +988,10 @@
   dependencies:
     "@types/node" "*"
 
-"@unique-nft/api@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@unique-nft/api/-/api-0.0.7.tgz#7ad6fb7b139aff33593e28f204097f71c5c4bf84"
-  integrity sha512-5l6Ej+VzS05BacxCfYNfRZn1W7aNFucAfLsq1DlnyIY99qoP/tGLgGok07Pc869RG6sYOmpYkJTl7nuvCrHFQw==
+"@unique-nft/api@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@unique-nft/api/-/api-0.0.8.tgz#1bc60326b41e75795d9725531a5356d5420f9d25"
+  integrity sha512-1RQ83Xx81mLB4ZMbtnORNcd+CEvSqLomcl2g/xw9t0scT+JSVrcK7hD22NKEIe1rZPVL0R4lCt4BvzsKc0srEw==
   dependencies:
     "@polkadot/api" "8.7.1"
     "@polkadot/extension-dapp" "0.43.3"
