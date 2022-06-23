@@ -2,7 +2,7 @@
   "name": "unique_api_vue",
   "license": "MIT",
   "author": "Unique network dev team",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "vite --force",
     "build": "tsup",
