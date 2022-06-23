@@ -78,6 +78,7 @@ export const useInit = (options?: InitOptions) => {
     ethAccountsRef,
     chainRef,
     initTask,
+    libs,
     async requestEthereumAccounts() {
       return await requestEthereumAccounts(ethAccountsRef)
     },

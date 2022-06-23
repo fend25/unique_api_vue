@@ -988,10 +988,10 @@
   dependencies:
     "@types/node" "*"
 
-"@unique-nft/api@0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@unique-nft/api/-/api-0.0.8.tgz#1bc60326b41e75795d9725531a5356d5420f9d25"
-  integrity sha512-1RQ83Xx81mLB4ZMbtnORNcd+CEvSqLomcl2g/xw9t0scT+JSVrcK7hD22NKEIe1rZPVL0R4lCt4BvzsKc0srEw==
+"@unique-nft/api@0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@unique-nft/api/-/api-0.0.9.tgz#35f723b42b782b179751044a8a66b44304ca3a14"
+  integrity sha512-EOkIJAnUWmOtvBwdJL1iORyo04fXqqgttexIf64c9W8kn1/ednpN3pitMMW+TvX1CjOuSy6+1Yq0foa1aEoInA==
   dependencies:
     "@polkadot/api" "8.7.1"
     "@polkadot/extension-dapp" "0.43.3"
@@ -999,13 +999,25 @@
     "@polkadot/types" "8.7.1"
     "@polkadot/util" "9.4.1"
     "@polkadot/util-crypto" "9.4.1"
-    "@unique-nft/types" "0.6.0-4"
+    "@unique-nft/opal-testnet-types" "0.5.2"
+    "@unique-nft/quartz-mainnet-types" "0.5.3"
+    "@unique-nft/unique-mainnet-types" "0.6.2"
     ethers "5.6.8"
 
-"@unique-nft/types@0.6.0-4":
-  version "0.6.0-4"
-  resolved "https://registry.yarnpkg.com/@unique-nft/types/-/types-0.6.0-4.tgz#9b1d820445bb985a82d1fb7e6e056de20b5141da"
-  integrity sha512-gNwJDPZboSI+eBCOt+/Q0ZqGB8DqkNRL+5Pnaj7EHqCIxzy57QVy4CHB7rPpourqhH2hAhxKA2LoeV6szwqb7Q==
+"@unique-nft/opal-testnet-types@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@unique-nft/opal-testnet-types/-/opal-testnet-types-0.5.2.tgz#6611a837336fa24e455b6534bd9fbcb6e37d4b90"
+  integrity sha512-FXpLDxkSjYsqm1moT+WnMUwl1CxUm4Lx//ZN62Wf+pU5LNajIgZqdJBdrp6H8vIs5awF1n3B1X53m+Bjqwo4ZA==
+
+"@unique-nft/quartz-mainnet-types@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@unique-nft/quartz-mainnet-types/-/quartz-mainnet-types-0.5.3.tgz#6c22d7453503920548e13c5db582605f37a7ee64"
+  integrity sha512-ZIGuVA6f6henvvGUK7oZHlQjtuFG9PDqAUvZaS18fgZvrbzolbL9W4QLv6z0+9WBfUG0MeaDyeRwk35WpmbQPQ==
+
+"@unique-nft/unique-mainnet-types@0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@unique-nft/unique-mainnet-types/-/unique-mainnet-types-0.6.2.tgz#20eeaaeee842b5bc7ea5454afb3b558b5ca2f0bb"
+  integrity sha512-ULyz5iL1tGbHnziabafKvPMA6tuAfyCm6ORBFZiWbN0pp6CkINs6jO91FbEoWG9Eo8M+dViCdfnkpR/dnMas1g==
 
 "@vitejs/plugin-vue@^2.3.3":
   version "2.3.3"

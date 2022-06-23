@@ -42,7 +42,7 @@
     }
   },
   "dependencies": {
-    "@unique-nft/api": "0.0.8",
+    "@unique-nft/api": "0.0.9",
     "vue": "^3.2.37"
   },
   "devDependencies": {
