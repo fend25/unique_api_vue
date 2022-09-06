@@ -1,4 +1,4 @@
-import {init, Substrate, Ethereum, SubstrateUnique, libs} from '@unique-nft/api'
+import {init, Substrate, Ethereum, SubstrateUnique, libs, InjectedAccountWithMeta} from '@unique-nft/api'
 import {useAsyncWrapper} from './hooks'
 import {shallowRef, onMounted, provide, inject, InjectionKey, ShallowRef} from 'vue'
 
@@ -27,11 +27,13 @@ const [useInitProvider, __use_init] = createInjectionState((options: InitProvide
   const chainRef = shallowRef<SubstrateUnique>(new Substrate.Unique())
   const substrateNodeWsUrlRef = shallowRef<string>(options.substrateNodeWsUrl)
   const ethAccountsRef = shallowRef<string[]>([])
+  const subAccountsRef = shallowRef<InjectedAccountWithMeta[]>([])
 
   const initTask = useAsyncWrapper(async () => {
     await init()
     if (options?.connectToPolkadotExtensionsAs) {
       await Substrate.extension.connectAs(options?.connectToPolkadotExtensionsAs)
+      subAccountsRef.value = await Substrate.extension.getAllAccounts()
     }
 
     if (typeof window !== 'undefined' && window.ethereum?.isConnected) {
