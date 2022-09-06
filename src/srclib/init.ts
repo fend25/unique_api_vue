@@ -55,7 +55,7 @@ const [useInitProvider, __use_init] = createInjectionState((options: InitProvide
   })
 
   return {
-    initTask, chainRef, ethAccountsRef, providerOptions: options
+    initTask, chainRef, ethAccountsRef, subAccountsRef, providerOptions: options
   }
 })
 export {useInitProvider}
