@@ -64,7 +64,7 @@ export interface InitOptions {
   dontCheckOnMount?: boolean
 }
 export const useInit = (options?: InitOptions) => {
-  const {initTask, ethAccountsRef, chainRef, providerOptions} =  __use_init()!
+  const {initTask, ethAccountsRef, chainRef, providerOptions, subAccountsRef} =  __use_init()!
 
   const check = async() => {
     if (!initTask.isResolved) {
@@ -78,6 +78,7 @@ export const useInit = (options?: InitOptions) => {
 
   return {
     ethAccountsRef,
+    subAccountsRef,
     chainRef,
     initTask,
     libs,
