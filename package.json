@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --force",
     "build": "tsup",
+    "patch": "npm run release -- -i patch --ci",
     "release": "dotenv -e .release.env -- release-it",
     "release_github": "dotenv -e .release.env -- release-it -- --no-increment --no-git --no-npm --github.release --github.update"
   },
@@ -42,7 +43,7 @@
     }
   },
   "dependencies": {
-    "@unique-nft/api": "0.0.9",
+    "@unique-nft/api": "^0.1.12",
     "vue": "^3.2.37"
   },
   "devDependencies": {
