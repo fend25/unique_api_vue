@@ -1,4 +1,6 @@
 import {init, Substrate, Ethereum, SubstrateUnique, libs, InjectedAccountWithMeta} from '@unique-nft/api'
+import * as uniqueNftApi from '@unique-nft/api'
+
 import {useAsyncWrapper} from './hooks'
 import {shallowRef, onMounted, provide, inject, InjectionKey, ShallowRef} from 'vue'
 
@@ -82,6 +84,8 @@ export const useInit = (options?: InitOptions) => {
     chainRef,
     initTask,
     libs,
+    uniqueNftApi,
+    utils: uniqueNftApi,
     async requestEthereumAccounts() {
       return await requestEthereumAccounts(ethAccountsRef)
     },
